@@ -10,12 +10,15 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    val edtNum1 = findViewById<EditText>(R.id.edtNum1)
-    val edtNum2 = findViewById<EditText>(R.id.edtNum2)
-    val btnCalc = findViewById<Button>(R.id.btnCalc)
-    val txtResult = findViewById<TextView>(R.id.txtAns)
+    var num1 = findViewById<EditText>(R.id.edtNum1)
+    var num2 = findViewById<EditText>(R.id.edtNum2)
+    var btnCalc = findViewById<Button>(R.id.btnCalc)
+    var txtResult = findViewById<TextView>(R.id.txtAns)
+    // assigned variables
 
-    fun Multiply(){
+    fun Multiply(num1, num2){
+
+        var result : Int = num1 * num2
 
 
 
@@ -26,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        onButton click {
-            Multiply() // <- calling function
-        }
+            btnCalc.setOnClickListener {
+                Multiply(num1, num2) // <- calling function
+            }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
