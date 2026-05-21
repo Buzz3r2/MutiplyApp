@@ -1,22 +1,22 @@
 package com.example.multiplyapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    val edtNum1
-    val edtNum2
-    val multiplyButton = findViewById<Button>(R.id.btnCalc)
-    val txtResult
-    num1 = edtNum1.text // fix this
-    num2 = edtNum2.text
-    btnCalc = btnCalc
-    ans = txtResult.text
+    val edtNum1 = findViewById<EditText>(R.id.edtNum1)
+    val edtNum2 = findViewById<EditText>(R.id.edtNum2)
+    val btnCalc = findViewById<Button>(R.id.btnCalc)
+    val txtResult = findViewById<TextView>(R.id.txtAns)
 
     fun Multiply(){
+
 
 
     }

@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="MULTIPLICATION APP"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Enter number here"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="102dp" />
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Enter number here"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="200dp" />
